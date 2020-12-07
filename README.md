@@ -30,10 +30,24 @@ In order to see if the model is actually extracting information from the images,
 <img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/conv1_fm.png" width = 500 height = 300>
 <img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/maxp1_fm.png" width = 500 height = 300>  
 <img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/conv2_fm.png" width = 500 height = 300>
-<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/max2_fm.png" width = 500 height = 300>  
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/maxp2_fm.png" width = 500 height = 300>  
+  
+As it can be seen, the feature maps of the latter layers are more blurred and abstract, which means the model is learning higher level features to classify the image.  
+| |C2 = 20	|C2 = 40|	C2 = 60	|C2 = 80|	C2 = 100|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|C1 = 10|	0.4645|	0.4320|	0.4795|	0.4665|	0.4865|
+|C1 = 30|	0.4625|	0.4650	|0.4695|	0.4905|	0.4940|
+|C1 = 50	|0.4775|	0.4665	|0.4955|	0.5025|	0.4870|
+|C1 = 70|	0.4885|	0.4940|	0.4950|	0.5000|	0.5110|
+|C1 = 90	|0.4845	|0.5095|	0.5055	|0.5125|	0.5200|  
+  
+As can be seen, the combinition of C1 = 90 and C2 = 100 yields the highest accuracy.  
   
 
-## Find Optimal Number of Channels
+
+## Find Optimal Number of Channels  
+There are C1 channels in the first convolutional layer and C2 channels in the second. For C1 = 10, 30, 50, 70, 90 and C2  = 20, 40, 60, 80, 100, the model is trained and the test accuracies are as below:  
+
 ## Find Best Optimizer
 ### Use SGD Momentum
 ### Use RMSProp
