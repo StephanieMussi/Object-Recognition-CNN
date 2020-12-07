@@ -16,6 +16,22 @@ The codes for the model construction is as followed:
     model.add(layers.Flatten())
     model.add(layers.Dense(10, use_bias=True, input_shape=(300,)))
 ```
+After training with SGD optimizer on mini-batches of size 128 for 1000 epochs, the accuracies are:  
+|Train Accuracy | Test Accuracy |
+|:-:|:-:|
+|74.68% |49.55%| 
+  
+The graphs of accuracies and losses are plotted:  
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/SGDAcc.png" width = 300 height = 200>
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/SGDLoss.png" width = 300 height = 200>   
+
+In order to see if the model is actually extracting information from the images, the feature maps of the first input image is displayed:  
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/1st_input.png" width = 320 height = 320>  
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/conv1_fm.png" width = 500 height = 300>
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/maxp1_fm.png" width = 500 height = 300>  
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/conv2_fm.png" width = 500 height = 300>
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/max2_fm.png" width = 500 height = 300>  
+  
 
 ## Find Optimal Number of Channels
 ## Find Best Optimizer
