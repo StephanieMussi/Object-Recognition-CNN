@@ -2,7 +2,7 @@
 The [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset contains 32x32 RGB color images each labeled from 0 to 9. In this project, batch 1 of the train data is used, the the test data is trimmed to 2000 samples. The trimmed test data can be found in ("test_batch_trim.csv")[https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/test_batch_trim].  
 ## Initial Model
 The Architecture of the Convolution Network Model implemented is as below:  
-<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/CNNmodel.png" width = 1000 height = 700>  
+<img src = "https://github.com/StephanieMussi/Object_Recognition_CNN/blob/main/Figures/CNNmodel.png" width = 800 height = 400>  
 
 The codes for the model construction is as followed: 
 ```python
